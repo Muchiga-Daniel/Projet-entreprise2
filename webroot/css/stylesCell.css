@@ -1,0 +1,187 @@
+#notification-icon nav, ul, li, a  {margin: 0; padding: 0;}
+#notification-icon a {text-decoration: none;}
+#notification-icon {
+    margin: 10px auto;
+}
+.header-picto{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 0;
+            box-shadow: 0 10px 0 2px #171616, 0 16px 0 2px #171616, 0 22px 0 2px #171616;
+            margin-top: -10px;
+            left: 5px;
+ }
+
+#notification-icon .toggleMenu {
+    display:  none;
+    background: transparent;
+    padding: 10px 15px;
+    color: transparent;
+    margin-bottom: 10px;
+
+}
+#notification-icon .nav {
+    list-style: none;
+     *zoom: 1;
+     background:#116d76;
+}
+#notification-icon .nav:before,
+#notification-icon .nav:after {
+    content: " "; 
+    display: table; 
+}
+#notification-icon .nav:after {
+    clear: both;
+}
+#notification-icon .nav ul {
+    list-style: none;
+    width: 9em;
+}
+#notification-icon .nav a {
+    padding: 10px 15px;
+    color:#fff;
+}
+#notification-icon .nav .stylemenu {
+    padding: 10px 15px;
+    color:#fff;
+}
+#notification-icon .nav li {
+    position: relative;
+}
+#notification-icon .nav > li {
+    float: left;
+    border-top: 1px solid #104336;
+}
+#notification-icon .nav > li > .parent {
+    background-image: url("../img/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#notification-icon .nav > li > a {
+    display: block;
+}
+#notification-icon .nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+#notification-icon .nav > li.hover > ul {
+    left: 0;
+}
+#notification-icon .nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+#notification-icon .nav li li a {
+    display: block;
+    background: #1d7a62;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+#notification-icon .nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+.btn {
+    width: 150px;
+    float: right;
+    text-align: center;
+    background: #1d7a62;
+    border: 1px solid #175e4c;
+}
+
+.btn a{
+	color:white !important;
+}
+
+.btn-li{
+    text-align: center;
+}
+
+.btn-li li{
+	display: inline-block;
+	text-align: center;
+    background: #1d7a62;
+    border: 1px solid #175e4c;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.btn-li a{
+	color:white !important;
+}
+
+.cmt{
+	margin-left: 0px !important;
+    margin-right: 0px !important;
+    max-width: 115rem;
+}
+
+.act{
+	padding-top: 0px !important;
+}
+
+.act .input {
+	display: inline-block;
+	width: 45%;
+    margin-right: 59px;
+}
+
+.act .rang-1 li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    width: 210px;
+}
+
+.act2 span{
+    display: none;
+}
+
+/*.ref{
+    border: 2px solid red;
+    /* padding-left: 6px; 
+    border-radius: 10px;
+    width: 100px !important;
+    text-align: center;
+}*/
+
+.act .absolute{
+   color: #1798A5;
+    text-transform: uppercase;
+}
+
+textarea[rows] {
+    height: 0 !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    #notification-icon .active {
+        display: block;
+    }
+    #notification-icon .nav > li {
+        float: none;
+    }
+    #notification-icon .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    #notification-icon .nav li li .parent {
+        background-image: url("../img/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    #notification-icon .nav ul {
+        display: block;
+        width: 100%;
+    }
+   #notification-icon .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
